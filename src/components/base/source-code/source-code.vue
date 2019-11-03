@@ -10,7 +10,7 @@ export default {
   props: {
     link: {
       type: String,
-      default: 'https://github.com/TaleLin/lin-cms-vue',
+      default: 'https://github.com/TaleLin/lin-system-vue',
     },
   },
   methods: {

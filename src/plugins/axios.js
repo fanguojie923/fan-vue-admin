@@ -88,7 +88,7 @@ _axios.interceptors.request.use((originConfig) => {
   }
 
   // step2: auth 处理
-  // if (reqConfig.url === 'cms/user/refresh') {
+  // if (reqConfig.url === 'system/user/refresh') {
   //   const refreshToken = getToken('refresh_token')
   //   if (refreshToken) {
   //     // eslint-disable-next-line no-param-reassign

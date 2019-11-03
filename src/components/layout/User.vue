@@ -269,7 +269,7 @@
 
                 return this.$axios({
                     method: 'post',
-                    url: '/cms/file/',
+                    url: '/system/file/',
                     data: {
                         file,
                     },
@@ -286,7 +286,7 @@
                     // }
                     return this.$axios({
                         method: 'put',
-                        url: '/cms/user/avatar',
+                        url: '/system/user/avatar',
                         data: {
                             avatar: res[0].path,
                         },
