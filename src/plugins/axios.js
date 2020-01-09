@@ -13,7 +13,7 @@ import { getToken } from '@/utils/token'
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 
 const config = {
-  baseURL: Config.baseUrl || process.env.apiUrl || '',
+  baseURL: Config.baseUrl || process.env.VUE_APP_BASE_URL || '',
   timeout: 5 * 1000, // 请求超时时间设置
   crossDomain: true,
   // withCredentials: true, // Check cross-site Access-Control
@@ -42,7 +42,7 @@ _axios.interceptors.request.use((originConfig) => {
       message: 'request need url',
     })
   }
-
+  console.log(reqConfig)
   if (!reqConfig.method) { // 默认使用 get 请求
     reqConfig.method = 'get'
   }

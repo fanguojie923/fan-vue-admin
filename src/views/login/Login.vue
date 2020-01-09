@@ -74,8 +74,8 @@ export default {
                 password: '123456'
             },
             loginRules: {
-                username: [{required: true, trigger: 'blur', validator: validateUsername}],
-                password: [{required: true, trigger: 'blur', validator: validatePassword}]
+                // username: [{required: true, trigger: 'blur', validator: validateUsername}],
+                // password: [{required: true, trigger: 'blur', validator: validatePassword}]
             },
             navbarHeaderContent: '环境大数据平台',
             loading: false,

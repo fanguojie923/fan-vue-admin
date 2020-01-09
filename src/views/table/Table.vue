@@ -56,12 +56,12 @@
             </div>
         </div>
         <!-- 编辑页面 -->
-        <rule-add v-else :edit-book-i-d="editBookID" @editClose="editClose" />
+<!--        <rule-add v-else :edit-book-i-d="editBookID" @editClose="editClose" />-->
     </div>
 </template>
 
 <script>
-    import ZzdTable from '@/components/base/Table'
+    import ZzdTable from '@/components/base/table'
 
     export default {
         name: 'Table',

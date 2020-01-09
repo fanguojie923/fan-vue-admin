@@ -47,12 +47,12 @@ export default class User {
 
     /**
      * 登陆获取tokens
-     * @param {string} nickname 昵称
+     * @param {string} username 昵称
      * @param {string} password 密码
      */
-    static async getToken(nickname, password) {
+    static async getToken(username, password) {
         const tokens = await post('system/user/login', {
-            nickname,
+            username,
             password,
         })
         saveTokens(tokens.access_token, tokens.refresh_token)
